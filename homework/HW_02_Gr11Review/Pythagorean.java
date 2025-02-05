@@ -23,18 +23,10 @@ public class Pythagorean {
         // c must be at least 2, otherwise a and b would not be positive integers
         for (int c=2; c<=max; c++) {
             // a must be at least 1
-            for (int a=1; a<=max; a++) {
+            for (int a=2; a<=max; a++) {
                 // based on the basic triangle inequality, a + b < c
                 // thus, b cannot be smaller than c - a +1 (b is an integer)
-                // b also cannot = a. proof:
-                // first, falsely assume a=b
-                // a^2 + b^2 = c^2
-                //      2a^2 = c^2
-                //         2 = c^2/a^2
-                //       c/a = +/-sqrt(2)
-                // since c and a are integers, this implies the square root of 2 must be rational
-                // famously, the square root of 2 is irrational.
-                // therefore, we have proven that a != b by contradiction. QED
+                // b also cannot = a since there are no isosceles right triangles.
                 for (int b=c-a+1; b<a; b++) {
                     if (a*a + b*b == c*c) {
                         // output the triple

@@ -24,27 +24,32 @@ public class SortThreeLetters {
             c2 = in.charAt(1);
             c3 = in.charAt(2);
 
-            if (97 <= c1 && 97 <= c2 && 97 <= c3 && c1 <= 122 && c2 <= 122 && c3 <= 122) {
+            if ('a' <= c1 && 'a' <= c2 && 'a' <= c3 && c1 <= 'z' && c2 <= 'z' && c3 <= 'z') {
                 // output sorted characters:
                 System.out.print("Your characters sorted: ");
 
-                if (c1 <= c2 && c2 <= c3) {
-                    System.out.println("" + c1 + c2 + c3);
+                // c1 is the first
+                if (c1 <= c2 && c1 <= c3) {
+                    // c2 is the second
+                    if (c2 <= c3) System.out.println("" + c1 + c2 + c3);
+                    // c3 is the second
+                    else System.out.println("" + c1 + c3 + c2);
                 }
-                else if (c1 <= c3 && c3 <= c2) {
-                    System.out.println("" + c1 + c3 + c2);
+
+                // c2 is the first
+                else if (c2 <= c1 && c2 <= c3) {
+                    // c1 is the second
+                    if (c1 <= c3) System.out.println("" + c2 + c1 + c3);
+                    // c3 is the second
+                    else System.out.println("" + c2 + c3 + c1);
                 }
-                else if (c2 <= c1 && c1 <= c3) {
-                    System.out.println("" + c2 + c1 + c3);
-                }
-                else if (c2 <= c3) {
-                    System.out.println("" + c2 + c3 + c1);
-                }
-                else if (c1 <= c2) {
-                    System.out.println("" + c3 + c1 + c2);
-                }
+
+                // c3 is the first
                 else {
-                    System.out.println("" + c3 + c2 + c1);
+                    // c1 is the second
+                    if (c1 <= c2) System.out.println("" + c3 + c1 + c2);
+                    // c2 is the second
+                    else System.out.println("" + c3 + c2 + c1);
                 }
             }
             else {
