@@ -20,12 +20,12 @@ public class Pythagorean {
         // nest for loop to check for triples
         System.out.println("Pythagorean triples:");
 
-        // c must be at least 2, otherwise a and b would not be positive integers
-        for (int c=2; c<=max; c++) {
-            // a must be at least 1
+        // c must be at least 5 (the first pythagorean triple is 3, 4, 5)
+        for (int c=5; c<=max; c++) {
+            // a must be at least 2 (there are no consecutive square numbers)
             for (int a=2; a<=max; a++) {
-                // based on the basic triangle inequality, a + b < c
-                // thus, b cannot be smaller than c - a +1 (b is an integer)
+                // based on the basic triangle inequality, a + b > c
+                // thus, b cannot be smaller than c - a + 1 (b is an integer)
                 // b also cannot = a since there are no isosceles right triangles.
                 for (int b=c-a+1; b<a; b++) {
                     if (a*a + b*b == c*c) {
