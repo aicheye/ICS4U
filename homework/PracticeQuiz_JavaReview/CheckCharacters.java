@@ -1,4 +1,4 @@
-import java.util.*;
+import java.util.Scanner;
 
 public class CheckCharacters {
     public static void main(String[] args) {
@@ -31,6 +31,6 @@ public class CheckCharacters {
 
         // output answers
         System.out.printf("\n%d characters are upper case alphabet\n", uppers);
-        System.out.printf("The largest character is %c", largest);
+        System.out.printf("The largest character is %c\n", largest);
     }
 }
