@@ -5,7 +5,7 @@
  Description: Reverse an array of size 14 using two methods
  */
 
-import java.util.*;
+import java.util.Scanner;
 
 public class Reverse {
     public static void main(String[] args) {
@@ -49,5 +49,8 @@ public class Reverse {
             System.out.print(arr[i] + " ");
         }
         System.out.println();
+
+        // close scanner
+        sc.close();
     }
 }

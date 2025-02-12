@@ -5,7 +5,7 @@
  Description: Performs various operations on arrays
  */
 
-import java.util.*;
+import java.util.Scanner;
 
 public class Simple1DArray {
     public static void main(String[] args) {
@@ -44,11 +44,15 @@ public class Simple1DArray {
         for (int i=0; i<n; i++) {
             sampleSum += array[i];
         }
+        System.out.println("Sum of all numbers: " + sampleSum);
 
         // output the even numbers in the array
         System.out.println("Even numbers in the array: ");
         for (int i=0; i<n; i++) {
             if (array[i] % 2 == 0) System.out.println(array[i]);
         }
+
+        // close scanner
+        sc.close();
     }
 }

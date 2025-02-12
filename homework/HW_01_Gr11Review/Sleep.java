@@ -5,7 +5,7 @@
  Description: Calculates the hours of sleep you have had in your life
  */
 
-import java.util.*;
+import java.util.Scanner;
 
 public class Sleep {
     public static void main(String[] args) {
@@ -54,5 +54,8 @@ public class Sleep {
         // output
         System.out.printf("You have been alive for %d days\n", daysAlive);
         System.out.printf("You have slept %d hours\n", hoursSlept);
+        
+        // close scanner
+        sc.close();
     }
 }

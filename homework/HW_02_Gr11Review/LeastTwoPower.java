@@ -5,7 +5,7 @@
  Description: Outputs the smallest power of two which is greater than or equal to the number that is read
  */
 
-import java.util.*;
+import java.util.Scanner;
 
 public class LeastTwoPower {
     public static void main(String[] args) {
@@ -27,5 +27,8 @@ public class LeastTwoPower {
 
         // output the answer
         System.out.printf("%d = 2^%d is the smallest power of two greater than %d\n", pow, exp, num);
+    
+        // close scanner
+        sc.close();
     }
 }

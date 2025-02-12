@@ -1,4 +1,4 @@
-import java.util.*;
+import java.util.Scanner;
 
 public class ProvinceTemps {
     public static void main(String[] args) {
@@ -45,5 +45,8 @@ public class ProvinceTemps {
 
         if (found) System.out.printf("The coldest month in %s was month %d\n", queryProvince, coldestMonth);
         else System.out.println("Province not found!");
+
+        // close scanner
+        sc.close();
     }
 }

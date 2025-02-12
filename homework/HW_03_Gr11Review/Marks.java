@@ -5,7 +5,7 @@
  Description: Performs various operations on test marks
  */
 
-import java.util.*;
+import java.util.Scanner;
 
 public class Marks {
     public static void main(String[] args) {
@@ -75,5 +75,8 @@ public class Marks {
                 System.out.printf("Student %d\n", i);
             }
         }
+
+        // close scanner
+        sc.close();
     }
 }

@@ -32,5 +32,8 @@ public class CheckCharacters {
         // output answers
         System.out.printf("\n%d characters are upper case alphabet\n", uppers);
         System.out.printf("The largest character is %c\n", largest);
+
+        // close scanner
+        sc.close();
     }
 }

@@ -5,7 +5,7 @@
  Description: Outputs three letters in alphabetical order
  */
 
-import java.util.*;
+import java.util.Scanner;
 
 public class SortThreeLetters {
     public static void main(String[] args) {
@@ -59,5 +59,8 @@ public class SortThreeLetters {
         else {
             System.out.println("*ERR* Please enter only three characters.");
         }
+
+        // close scanner
+        sc.close();
     }
 }
