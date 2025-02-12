@@ -16,7 +16,6 @@ public class Marks {
         int[][] marks;
         double[] averages;
         int maxStudent;
-        double maxAverage;
         double classAverage;
 
         // take inputs
@@ -48,20 +47,18 @@ public class Marks {
             System.out.printf("\nStudent %d's average is %.0f\n", i, averages[i]);
         }
 
-        // initialize the maxStudent and maxAverage as -infinity
-        maxStudent = -1;
-        maxAverage = Double.MIN_VALUE;
+        // initialize the maxStudent and maxAverage as the first student
+        maxStudent = 0;
 
         // find the highest average and output it
         for (int i=0; i<numStudents; i++) {
-            if (averages[i] > maxAverage) {
+            if (averages[i] > averages[maxStudent]) {
                 maxStudent = i;
-                maxAverage = averages[i];
             }
         }
 
         // output the highest average
-        System.out.printf("\nStudent %d has the highest average (%.0f)\n", maxStudent, maxAverage);
+        System.out.printf("\nStudent %d has the highest average (%.0f)\n", maxStudent, averages[maxStudent]);
 
         // initialize the class average
         classAverage = 0;
