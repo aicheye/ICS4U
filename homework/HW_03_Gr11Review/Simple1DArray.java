@@ -1,9 +1,10 @@
-/*
-    Programmer: Sean Yang
-    Program Name: Simple1DArray
-    Date: 07/02/2025
-    Description: Performs various operations on arrays
-*/
+
+/**
+ * Programmer: Sean Yang
+ * Program Name: Simple1DArray
+ * Date: 07/02/2025
+ * Description: Performs various operations on arrays
+ */
 
 import java.util.Scanner;
 

@@ -1,9 +1,10 @@
-/*
-    Programmer: Sean Yang
-    Program Name: Average
-    Date: 04/02/2025
-    Description: Calculates the average of three floats
-*/
+
+/**
+ * Programmer: Sean Yang
+ * Program Name: Average
+ * Date: 04/02/2025
+ * Description: Calculates the average of three floats
+ */
 
 import java.util.Scanner;
 

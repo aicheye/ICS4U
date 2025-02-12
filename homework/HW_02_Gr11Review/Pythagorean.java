@@ -1,9 +1,10 @@
-/*
-    Programmer: Sean Yang
-    Program Name: Pythagorean
-    Date: 04/02/2025
-    Description: Finds all pythagorean triples whose largest member is less than or equal to that integer
-*/
+
+/**
+ * Programmer: Sean Yang
+ * Program Name: Pythagorean
+ * Date: 04/02/2025
+ * Description: Finds all pythagorean triples whose largest member is less than or equal to that integer
+ */
 
 import java.util.Scanner;
 

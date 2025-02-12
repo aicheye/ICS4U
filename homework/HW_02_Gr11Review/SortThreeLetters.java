@@ -1,9 +1,10 @@
-/*
-    Programmer: Sean Yang
-    Program Name: SortThreeLetters
-    Date: 04/02/2025
-    Description: Outputs three letters in alphabetical order
-*/
+
+/**
+ * Programmer: Sean Yang
+ * Program Name: SortThreeLetters
+ * Date: 04/02/2025
+ * Description: Outputs three letters in alphabetical order
+ */
 
 import java.util.Scanner;
 

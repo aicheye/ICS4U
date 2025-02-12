@@ -1,9 +1,10 @@
-/*
-    Programmer: Sean Yang
-    Program Name: MakeUppercase
-    Date: 12/02/2025
-    Description: Makes a string uppercase
-*/
+
+/**
+ * Programmer: Sean Yang
+ * Program Name: MakeUppercase
+ * Date: 12/02/2025
+ * Description: Makes a string uppercase
+ */
 
 import java.util.Scanner;
 

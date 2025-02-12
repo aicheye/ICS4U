@@ -1,9 +1,10 @@
-/*
-    Programmer: Sean Yang
-    Program Name:
-    Date:
-    Description:
-*/
+
+/**
+ * Programmer: Sean Yang
+ * Program Name:
+ * Date:
+ * Description:
+ */
 
 import java.util.Scanner;
 

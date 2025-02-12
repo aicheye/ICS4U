@@ -1,8 +1,9 @@
-/*
- Programmer: Sean Yang
- Program Name: Marks
- Date: 07/02/2007
- Description: Performs various operations on test marks
+
+/**
+ * Programmer: Sean Yang
+ * Program Name: Marks
+ * Date: 07/02/2007
+ * Description: Performs various operations on test marks
  */
 
 import java.util.Scanner;
@@ -28,8 +29,8 @@ public class Marks {
         marks = new int[numStudents][numTests];
 
         // enter all marks for students
-        for (int j=0; j<numTests; j++) {
-            for (int i=0; i<numStudents; i++) {
+        for (int j = 0; j < numTests; j++) {
+            for (int i = 0; i < numStudents; i++) {
                 System.out.printf("Enter student %d's mark on test %d: ", i, j);
                 marks[i][j] = sc.nextInt();
             }
@@ -39,9 +40,9 @@ public class Marks {
         averages = new double[numStudents];
 
         // calculate and output the average of each student
-        for (int i=0; i<numStudents; i++) {
+        for (int i = 0; i < numStudents; i++) {
             averages[i] = 0;
-            for (int j=0; j<numTests; j++) {
+            for (int j = 0; j < numTests; j++) {
                 averages[i] += (double) marks[i][j] / numTests;
             }
             System.out.printf("\nStudent %d's average is %.0f\n", i, averages[i]);
@@ -51,7 +52,7 @@ public class Marks {
         maxStudent = 0;
 
         // find the highest average and output it
-        for (int i=0; i<numStudents; i++) {
+        for (int i = 0; i < numStudents; i++) {
             if (averages[i] > averages[maxStudent]) {
                 maxStudent = i;
             }
@@ -64,13 +65,13 @@ public class Marks {
         classAverage = 0;
 
         // find the class average
-        for (int i=0; i<numStudents; i++) {
+        for (int i = 0; i < numStudents; i++) {
             classAverage += averages[i] / numStudents;
         }
 
         // loop over all students and output if they are higher than the class average
         System.out.printf("\nStudents with a mark higher than the class average (%.0f):\n", classAverage);
-        for (int i=0; i<numStudents; i++) {
+        for (int i = 0; i < numStudents; i++) {
             if (averages[i] > classAverage) {
                 System.out.printf("Student %d\n", i);
             }

@@ -1,9 +1,10 @@
-/*
-    Programmer: Sean Yang
-    Program Name: Paper
-    Date: 04/02/2025
-    Description: Calculates the thickness and area of a piece of paper after it has been cut and folded 40 times
-*/
+/**
+ * Programmer: Sean Yang
+ * Program Name: Paper
+ * Date: 04/02/2025
+ * Description: Calculates the thickness and area of a piece of paper after it
+ * has been cut and folded 40 times
+ */
 
 public class Paper {
     public static void main(String[] args) {

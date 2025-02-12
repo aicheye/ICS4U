@@ -1,9 +1,10 @@
-/*
-    Programmer: Sean Yang
-    Program Name: Reverse
-    Date: 07/02/2025
-    Description: Reverse an array of size 14 using two methods
-*/
+
+/**
+ * Programmer: Sean Yang
+ * Program Name: Reverse
+ * Date: 07/02/2025
+ * Description: Reverse an array of size 14 using two methods
+ */
 
 import java.util.Scanner;
 

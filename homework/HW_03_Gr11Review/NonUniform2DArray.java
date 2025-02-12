@@ -1,9 +1,9 @@
-/*
-    Programmer: Sean Yang
-    Program Name: NonUniform2DArray
-    Date: 07/02/2025
-    Description: computes the sum of all the elements of a 2d array
-*/
+/**
+ * Programmer: Sean Yang
+ * Program Name: NonUniform2DArray
+ * Date: 07/02/2025
+ * Description: computes the sum of all the elements of a 2d array
+ */
 
 public class NonUniform2DArray {
     public static void main(String[] args) {

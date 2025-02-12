@@ -1,9 +1,10 @@
-/*
-    Programmer: Sean Yang
-    Program Name: Sleep
-    Date: 04/02/2025
-    Description: Calculates the hours of sleep you have had in your life
-*/
+
+/**
+ * Programmer: Sean Yang
+ * Program Name: Sleep
+ * Date: 04/02/2025
+ * Description: Calculates the hours of sleep you have had in your life
+ */
 
 import java.util.Scanner;
 
