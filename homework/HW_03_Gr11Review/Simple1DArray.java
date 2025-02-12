@@ -1,9 +1,9 @@
 /*
- Programmer: Sean Yang
- Program Name: Simple1DArray
- Date: 07/02/2025
- Description: Performs various operations on arrays
- */
+    Programmer: Sean Yang
+    Program Name: Simple1DArray
+    Date: 07/02/2025
+    Description: Performs various operations on arrays
+*/
 
 import java.util.Scanner;
 
@@ -24,32 +24,34 @@ public class Simple1DArray {
         array = new int[n];
 
         // enter n integers
-        for (int i = 0; i<n; i++) {
+        for (int i = 0; i < n; i++) {
             System.out.print("Enter an integer to add to your array: ");
             array[i] = sc.nextInt();
         }
 
         // switch the values at either end of the array
         temp = array[0];
-        array[0] = array[n-1];
-        array[n-1] = temp;
+        array[0] = array[n - 1];
+        array[n - 1] = temp;
 
         // make elements positive
-        for (int i=0; i<n; i++) {
-            if (array[i] < 0 ) array[i] = -array[i];
+        for (int i = 0; i < n; i++) {
+            if (array[i] < 0)
+                array[i] = -array[i];
         }
 
         // sum all the values of the array
         sampleSum = 0;
-        for (int i=0; i<n; i++) {
+        for (int i = 0; i < n; i++) {
             sampleSum += array[i];
         }
         System.out.println("Sum of all numbers: " + sampleSum);
 
         // output the even numbers in the array
         System.out.println("Even numbers in the array: ");
-        for (int i=0; i<n; i++) {
-            if (array[i] % 2 == 0) System.out.println(array[i]);
+        for (int i = 0; i < n; i++) {
+            if (array[i] % 2 == 0)
+                System.out.println(array[i]);
         }
 
         // close scanner

@@ -1,11 +1,11 @@
 /*
- Programmer: Sean Yang
- Program Name: Digits
- Date: 04/02/2025
- Description: Finds the sums of the digits of a 3-digit number
- */
+    Programmer: Sean Yang
+    Program Name: Digits
+    Date: 04/02/2025
+    Description: Finds the sums of the digits of a 3-digit number
+*/
 
-import java.util.*;
+import java.util.Scanner;
 
 public class Digits {
     public static void main(String[] args) {

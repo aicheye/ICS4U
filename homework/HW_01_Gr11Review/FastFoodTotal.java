@@ -1,11 +1,11 @@
 /*
- Programmer: Sean Yang
- Program Name: FastFoodTotal
- Date: 04/02/2025
- Description: Calculates the total and change due of a fast food order
- */
+    Programmer: Sean Yang
+    Program Name: FastFoodTotal
+    Date: 04/02/2025
+    Description: Calculates the total and change due of a fast food order
+*/
 
-import java.util.*;
+import java.util.Scanner;
 
 public class FastFoodTotal {
     public static void main(String[] args) {

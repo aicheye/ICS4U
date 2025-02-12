@@ -1,9 +1,9 @@
 /*
- Programmer: Sean Yang
- Program Name: Paper
- Date: 04/02/2025
- Description: Calculates the thickness and area of a piece of paper after it has been cut and folded 40 times
- */
+    Programmer: Sean Yang
+    Program Name: Paper
+    Date: 04/02/2025
+    Description: Calculates the thickness and area of a piece of paper after it has been cut and folded 40 times
+*/
 
 public class Paper {
     public static void main(String[] args) {
@@ -19,9 +19,9 @@ public class Paper {
         area *= MM_PER_M * MM_PER_M;
 
         // cut and stack 40 times
-        for (int i=0; i<40; i++) {
+        for (int i = 0; i < 40; i++) {
             area /= 2;
-            thickness *=2;
+            thickness *= 2;
         }
 
         // convert thickness to km for readability

@@ -18,7 +18,7 @@ public class PercentageWorking {
         msDays = sc.nextInt();
         System.out.print("Mr. Jackson: ");
         mrDays = sc.nextInt();
-        System.out.println(2);
+        System.out.println();
 
         // output answers
         System.out.printf("Ms. Jackson: %.0f%%\n", (double) msDays / DAYS_IN_YEAR * 100);

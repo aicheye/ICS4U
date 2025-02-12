@@ -1,9 +1,9 @@
 /*
- Programmer: Sean Yang
- Program Name: SortThreeLetters
- Date: 04/02/2025
- Description: Outputs three letters in alphabetical order
- */
+    Programmer: Sean Yang
+    Program Name: SortThreeLetters
+    Date: 04/02/2025
+    Description: Outputs three letters in alphabetical order
+*/
 
 import java.util.Scanner;
 
@@ -31,32 +31,36 @@ public class SortThreeLetters {
                 // c1 is the first
                 if (c1 <= c2 && c1 <= c3) {
                     // c2 is the second
-                    if (c2 <= c3) System.out.println("" + c1 + c2 + c3);
+                    if (c2 <= c3)
+                        System.out.println("" + c1 + c2 + c3);
                     // c3 is the second
-                    else System.out.println("" + c1 + c3 + c2);
+                    else
+                        System.out.println("" + c1 + c3 + c2);
                 }
 
                 // c2 is the first
                 else if (c2 <= c1 && c2 <= c3) {
                     // c1 is the second
-                    if (c1 <= c3) System.out.println("" + c2 + c1 + c3);
+                    if (c1 <= c3)
+                        System.out.println("" + c2 + c1 + c3);
                     // c3 is the second
-                    else System.out.println("" + c2 + c3 + c1);
+                    else
+                        System.out.println("" + c2 + c3 + c1);
                 }
 
                 // c3 is the first
                 else {
                     // c1 is the second
-                    if (c1 <= c2) System.out.println("" + c3 + c1 + c2);
+                    if (c1 <= c2)
+                        System.out.println("" + c3 + c1 + c2);
                     // c2 is the second
-                    else System.out.println("" + c3 + c2 + c1);
+                    else
+                        System.out.println("" + c3 + c2 + c1);
                 }
-            }
-            else {
+            } else {
                 System.out.println("*ERR* Please only enter lowercase letters.");
             }
-        }
-        else {
+        } else {
             System.out.println("*ERR* Please enter only three characters.");
         }
 
