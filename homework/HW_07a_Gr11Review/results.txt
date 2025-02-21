@@ -1,0 +1,18 @@
+The average of student 0 is 3.00
+The average of student 1 is 4.20
+The average of student 2 is 3.00
+The average of student 3 is 2.80
+The average of student 4 is 3.80
+The average of student 5 is 3.00
+The average of student 6 is 5.00
+The average of student 7 is 9.00
+The average of student 8 is 48.60
+The average of student 9 is 3.00
+
+Student 8 has the highest average.
+
+The class average of test 0 is 5.00
+The class average of test 1 is 7.00
+The class average of test 2 is 25.70
+The class average of test 3 is 4.00
+The class average of test 4 is 1.00

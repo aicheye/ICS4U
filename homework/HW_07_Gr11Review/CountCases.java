@@ -1,3 +1,11 @@
+
+/**
+ * Programmer: Sean Yang
+ * Program Name: CountCases
+ * Date: 21/02/2025
+ * Description: Counts uppercase and lowercase letters in each line of a file
+ */
+
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
