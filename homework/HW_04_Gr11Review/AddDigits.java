@@ -24,16 +24,6 @@ public class AddDigits {
         }
         System.out.println(ans);
 
-        // output each character
-        System.out.print("(");
-        System.out.print(input.charAt(0));
-
-        for (int i = 1; i < input.length(); i++) {
-            System.out.print("+" + input.charAt(i));
-        }
-
-        System.out.println(")");
-
         // close scanner
         sc.close();
     }
