@@ -1,4 +1,3 @@
-import java.util.Scanner;
 
 /**
  * Programmer: Sean Yang
@@ -6,6 +5,8 @@ import java.util.Scanner;
  * Date: 20/02/2025
  * Description:
  */
+
+import java.util.Scanner;
 
 public class AddDigits {
     public static void main(String[] args) {

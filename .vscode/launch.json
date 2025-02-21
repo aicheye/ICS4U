@@ -1,0 +1,20 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+        "type": "java",
+        "name": "StarTable",
+        "request": "launch",
+        "mainClass": "StarTable",
+        "projectName": "ICS4U_2b870c59"
+    },
+    {
+        "type": "java",
+        "name": "Run Current",
+        "request": "launch",
+        "mainClass": "${file}",
+        "cwd": "${fileDirname}",
+        "console": "integratedTerminal"
+    }
+]
+}
