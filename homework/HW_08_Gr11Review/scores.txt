@@ -1,0 +1,17 @@
+Math Scores:
+80
+90
+invalid
+75
+87
+55555:
+85
+92
+text
+70
+Art Class:
+missing
+Science Scores:
+78
+wrong
+93
