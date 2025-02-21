@@ -42,5 +42,8 @@ public class Encrypt {
 
         // output the encrypted sentence
         System.out.println("The encryption is: " + secret);
+
+        // close scanner
+        sc.close();
     }
 }
