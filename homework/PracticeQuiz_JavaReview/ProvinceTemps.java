@@ -10,7 +10,18 @@ public class ProvinceTemps {
         final int PROVINCE = 13;
 
         // declare variables
-        String[] provinces = {"Alberta", "B.C.", "Manitoba", "New Brunswick", "Newfoundland and Labrador", "Nova Scotia", "Ontario", "Prince Edward Island", "Quebec", "Saskatchewan"};
+        String[] provinces = {
+                "Alberta",
+                "B.C.",
+                "Manitoba",
+                "New Brunswick",
+                "Newfoundland and Labrador",
+                "Nova Scotia",
+                "Ontario",
+                "Prince Edward Island",
+                "Quebec",
+                "Saskatchewan"
+        };
         double[][] temps;
         String queryProvince;
         boolean found;
@@ -20,8 +31,8 @@ public class ProvinceTemps {
         temps = new double[PROVINCE][MONTH];
 
         // fill array using user inputs
-        for (int i=0; i<PROVINCE; i++) {
-            for (int j=0; j<MONTH; j++) {
+        for (int i = 0; i < PROVINCE; i++) {
+            for (int j = 0; j < MONTH; j++) {
                 System.out.printf("Enter the average temperature for %s on month %d: ", provinces[i], j);
                 temps[i][j] = sc.nextDouble();
             }
@@ -34,17 +45,20 @@ public class ProvinceTemps {
         found = false;
         coldestMonth = 1;
 
-        for (int i=0; i<PROVINCE && !found; i++) {
+        for (int i = 0; i < PROVINCE && !found; i++) {
             if (provinces[i].equals(queryProvince)) {
                 found = true;
-                for (int j=0; j<MONTH; j++) {
-                    if (temps[i][j] < temps[i][coldestMonth]) coldestMonth = j;
+                for (int j = 0; j < MONTH; j++) {
+                    if (temps[i][j] < temps[i][coldestMonth])
+                        coldestMonth = j;
                 }
             }
         }
 
-        if (found) System.out.printf("The coldest month in %s was month %d\n", queryProvince, coldestMonth);
-        else System.out.println("Province not found!");
+        if (found)
+            System.out.printf("The coldest month in %s was month %d\n", queryProvince, coldestMonth);
+        else
+            System.out.println("Province not found!");
 
         // close scanner
         sc.close();
