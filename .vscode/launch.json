@@ -2,19 +2,61 @@
   "version": "0.2.0",
   "configurations": [
     {
-        "type": "java",
-        "name": "StarTable",
-        "request": "launch",
-        "mainClass": "StarTable",
-        "projectName": "ICS4U_2b870c59"
+      "type": "java",
+      "name": "SequentialSearch",
+      "request": "launch",
+      "mainClass": "SequentialSearch",
+      "projectName": "ICS4U_c3b5a8e4"
     },
     {
-        "type": "java",
-        "name": "Run Current",
-        "request": "launch",
-        "mainClass": "${file}",
-        "cwd": "${fileDirname}",
-        "console": "integratedTerminal"
+      "type": "java",
+      "name": "JacksonLab2",
+      "request": "launch",
+      "mainClass": "JacksonLab2",
+      "projectName": "ICS4U_c3b5a8e4"
+    },
+    {
+      "type": "java",
+      "name": "ReverseText",
+      "request": "launch",
+      "mainClass": "ReverseText",
+      "projectName": "ICS4U_c3b5a8e4"
+    },
+    {
+      "type": "java",
+      "name": "Calculation",
+      "request": "launch",
+      "mainClass": "Calculation",
+      "projectName": "ICS4U_c3b5a8e4"
+    },
+    {
+      "type": "java",
+      "name": "CalculateSum",
+      "request": "launch",
+      "mainClass": "CalculateSum",
+      "projectName": "ICS4U_c3b5a8e4"
+    },
+    {
+      "type": "java",
+      "name": "TOEFL",
+      "request": "launch",
+      "mainClass": "TOEFL",
+      "projectName": "ICS4U_c3b5a8e4"
+    },
+    {
+      "type": "java",
+      "name": "StarTable",
+      "request": "launch",
+      "mainClass": "StarTable",
+      "projectName": "ICS4U_2b870c59"
+    },
+    {
+      "type": "java",
+      "name": "Run Current",
+      "request": "launch",
+      "mainClass": "${file}",
+      "cwd": "${fileDirname}",
+      "console": "integratedTerminal"
     }
-]
+  ]
 }
