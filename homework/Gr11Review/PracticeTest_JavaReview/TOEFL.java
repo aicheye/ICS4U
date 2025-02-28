@@ -29,6 +29,8 @@ public class TOEFL {
         } else {
             System.out.println("You have not met the minimum requirements.");
         }
+
+        sc.close();
     }
 
 }

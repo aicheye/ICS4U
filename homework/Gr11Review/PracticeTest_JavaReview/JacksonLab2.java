@@ -21,5 +21,7 @@ public class JacksonLab2 {
         }
 
         System.out.println((double) numCorrect / numLines * 100 + "% of the lines are correct.");
+
+        sc.close();
     }
 }

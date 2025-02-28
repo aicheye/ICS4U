@@ -55,5 +55,8 @@ public class SequentialSearch {
         } else {
             System.out.println("String not found.");
         }
+
+        // close scanner
+        sc.close();
     }
 }

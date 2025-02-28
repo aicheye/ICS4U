@@ -22,5 +22,7 @@ public class CalculateSum {
         }
 
         System.out.println("Answer: " + ans);
+
+        sc.close();
     }
 }

@@ -26,5 +26,7 @@ public class Attendance {
 
         if (daysAbsent < 0)
             System.out.println("Student not found.");
+
+        sc.close();
     }
 }

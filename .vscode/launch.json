@@ -3,6 +3,27 @@
   "configurations": [
     {
       "type": "java",
+      "name": "RandomNumberSearchOpposite",
+      "request": "launch",
+      "mainClass": "RandomNumberSearchOpposite",
+      "projectName": "ICS4U_c3b5a8e4"
+    },
+    {
+      "type": "java",
+      "name": "Search",
+      "request": "launch",
+      "mainClass": "Search",
+      "projectName": "ICS4U_c3b5a8e4"
+    },
+    {
+      "type": "java",
+      "name": "RandomNumberSearch",
+      "request": "launch",
+      "mainClass": "RandomNumberSearch",
+      "projectName": "ICS4U_c3b5a8e4"
+    },
+    {
+      "type": "java",
       "name": "SequentialSearch",
       "request": "launch",
       "mainClass": "SequentialSearch",
