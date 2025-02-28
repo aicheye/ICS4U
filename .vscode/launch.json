@@ -3,6 +3,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "Sort",
+      "request": "launch",
+      "mainClass": "Sort",
+      "projectName": "ICS4U_c3b5a8e4"
+    },
+    {
+      "type": "java",
       "name": "RandomNumberSearchOpposite",
       "request": "launch",
       "mainClass": "RandomNumberSearchOpposite",
