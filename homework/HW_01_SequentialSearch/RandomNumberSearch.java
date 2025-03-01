@@ -26,8 +26,8 @@ public class RandomNumberSearch {
 
         int index = -1;
 
-        for (int i = 0; i < randInts.length && index == -1; i++) {
-            if (randInts[i] == query) {
+        for (int i = 0; i < randNums.length && index == -1; i++) {
+            if (randNums[i] == query) {
                 index = i;
             }
         }
