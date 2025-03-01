@@ -13,7 +13,7 @@ public class RandomNumberSearchOpposite {
         // declare scanner and variables
         final int SIZE = 20;
         Scanner sc = new Scanner(System.in);
-        int randInts[] = new int[SIZE];
+        int[] randInts = new int[SIZE];
 
         // fill random integers
         for (int i = 0; i < SIZE; i++) {

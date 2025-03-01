@@ -1,7 +1,7 @@
 
 /**
  * Programmer: Sean Yang
- * Program Name: Marks
+ * Program Name: MarksFile
  * Date: 21/02/2025
  * Description: Performs various operations on an input file of marks
  */
@@ -12,7 +12,7 @@ import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
 
-public class Marks {
+public class MarksFile {
     public static void main(String[] args) {
         // declare buffered reader and variables
         BufferedReader br;
