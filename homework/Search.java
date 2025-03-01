@@ -35,7 +35,7 @@ public class Search {
      * binarySearch searches an array of integers in O(logN) time
      * 
      * @param array the array to search (must be sorted in non-decreasing order)
-     * @param item  the itme to find
+     * @param item  the item to find
      * @return the index of the item within the array (-1 if it doesn't exist)
      */
     public static int binarySearch(int[] array, int item) {

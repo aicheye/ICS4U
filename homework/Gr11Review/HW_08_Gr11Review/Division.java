@@ -27,9 +27,14 @@ public class Division {
                 System.out.print("Enter the divisor: ");
                 divisor = sc.nextInt();
 
-                // calculate answer
-                answer = numerator / divisor;
-                answer = (double) numerator / divisor;
+                int testDiv0 = numerator / divisor;
+
+                answer = 0;
+
+                // check if division by 0
+                if (testDiv0 == numerator / divisor) {
+                    answer = (double) numerator / divisor;
+                }
 
                 // output answer
                 System.out.printf("%d divided by %d is %.2f%n%n", numerator, divisor, answer);

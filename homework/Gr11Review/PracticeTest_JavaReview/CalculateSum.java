@@ -15,9 +15,9 @@ public class CalculateSum {
         ans = 0;
         for (int i = 1; i <= 2 * n; i++) {
             if (i % 2 == 1) {
-                ans += Math.pow(x, i);
+                ans += (int) Math.pow(x, i);
             } else {
-                ans -= Math.pow(x, i);
+                ans -= (int) Math.pow(x, i);
             }
         }
 

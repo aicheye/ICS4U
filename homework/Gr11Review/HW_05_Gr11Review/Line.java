@@ -11,10 +11,10 @@ public class Line {
     /**
      * Calculates the length of a line given two points
      * 
-     * @param x1 x-coord of first point
-     * @param y1 y-coord of first point
-     * @param x2 x-coord of second point
-     * @param y2 y=coord of second point
+     * @param x1 x co-ord of first point
+     * @param y1 y co-ord of first point
+     * @param x2 x co-ord of second point
+     * @param y2 y co-ord of second point
      * @return the length of the line
      */
     public static double length(int x1, int y1, int x2, int y2) {
@@ -32,11 +32,11 @@ public class Line {
 
     /**
      * Calculates the slope of a line given two points
-     * 
-     * @param x1 x-coord of first point
-     * @param y1 y-coord of first point
-     * @param x2 x-coord of second point
-     * @param y2 y=coord of second point
+     *
+     * @param x1 x co-ord of first point
+     * @param y1 y co-ord of first point
+     * @param x2 x co-ord of second point
+     * @param y2 y co-ord of second point
      * @return the length of the line
      */
     public static double slope(int x1, int y1, int x2, int y2) {

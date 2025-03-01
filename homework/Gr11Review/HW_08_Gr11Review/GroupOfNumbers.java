@@ -3,7 +3,7 @@
  * Programmer: Sean Yang
  * Program Name: GroupOfNumbers
  * Date: 21/02/2025
- * Description: Outputs sums of groups of numberes
+ * Description: Outputs sums of groups of numbers
  */
 
 import java.io.BufferedReader;

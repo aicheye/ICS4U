@@ -17,7 +17,7 @@ public class ReverseLines {
         String line;
         int size;
         String[] lines;
-        int index = 0;
+        int index;
 
         // try to access file
         try {
@@ -29,8 +29,8 @@ public class ReverseLines {
             lines = new String[size];
 
             // loop until line is empty
-            index = 0;
             line = br.readLine();
+            index = 0;
             while (line != null) {
                 // set array value
                 lines[index] = line;

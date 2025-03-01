@@ -56,7 +56,7 @@ public class MarksFile {
             // initialize maxAverage as index 0
             maxAverage = 0;
 
-            // loop over each student and check if their aveage is higher
+            // loop over each student and check if their average is higher
             for (int i = 0; i < STUDENTS; i++) {
                 if (averages[i] > averages[maxAverage])
                     maxAverage = i;
