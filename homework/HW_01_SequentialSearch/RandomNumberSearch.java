@@ -13,18 +13,18 @@ public class RandomNumberSearch {
         // declare scanner and variables
         final int SIZE = 20;
         Scanner sc = new Scanner(System.in);
-        int[] randInts = new int[SIZE];
+        int[] randNums = new int[SIZE];
 
         // fill random integers
         for (int i = 0; i < SIZE; i++) {
-            randInts[i] = (int) (Math.random() * 20) + 1;
+            randNums[i] = (int) (Math.random() * 20) + 1;
         }
 
         // take user query and check if it is in the list
         System.out.print("Enter an integer (1-20): ");
         int query = sc.nextInt();
 
-        int index = Search.sequentialSearch(randInts, query);
+        int index = Search.sequentialSearch(randNums, query);
 
         // output answer
         if (index >= 0) {

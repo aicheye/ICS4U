@@ -34,7 +34,7 @@ public class MakeUppercase {
             uppercase += character;
         }
 
-        // ourput new string
+        // output new string
         System.out.println("Uppercase Equivalent: " + uppercase);
 
         // close scanner

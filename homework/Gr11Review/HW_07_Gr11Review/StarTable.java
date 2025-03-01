@@ -18,7 +18,7 @@ public class StarTable {
         BufferedWriter bw;
         int width;
         int height;
-        char table[][];
+        char[][] table;
 
         // take user inputs
         System.out.print("Enter the width: ");

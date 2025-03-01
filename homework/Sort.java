@@ -7,11 +7,11 @@
 
 public class Sort {
     /**
-     * insertionSort sorts a array using the insertion sort algorithm
+     * insertionSort sorts an array using the insertion sort algorithm
      * 
      * @param array the array to sort
      */
-    public static void insertionSort(int array[]) {
+    public static void insertionSort(int[] array) {
         // loop over each item
         for (int i = 0; i < array.length; i++) {
             // set the current item to compare
@@ -35,10 +35,10 @@ public class Sort {
      * 
      * @param array the array to sort
      */
-    public static void selectionSort(int array[]) {
+    public static void selectionSort(int[] array) {
         // loop backwards (shrink from whole array to just 1 element)
         for (int lo = 0; lo < array.length; lo++) {
-            // find the smallest value from remaning array and swap with lo
+            // find the smallest value from remaining array and swap with lo
             int minIndex = lo;
             for (int i = lo; i < array.length; i++) {
                 if (array[i] < array[minIndex]) {

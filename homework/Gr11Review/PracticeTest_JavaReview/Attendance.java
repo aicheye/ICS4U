@@ -5,10 +5,26 @@ public class Attendance {
         Scanner sc = new Scanner(System.in);
         final int NUMSTUDENT = 5;
         final int DAYS = 5;
-        String names[] = new String[NUMSTUDENT];
-        boolean attendance[][] = new boolean[NUMSTUDENT][DAYS];
+        String[] names;
+        boolean[][] attendance;
         String query;
         int daysAbsent = -1;
+
+        names = new String[]{
+                "Albert",
+                "Brandy",
+                "Chris",
+                "Declan",
+                "Eva"
+        };
+
+        attendance = new boolean[][]{
+                {false, false, false, true, true},
+                {true, true, true, true, true},
+                {false, false, true, true, true},
+                {true, true, true, true, false},
+                {false, true, false, true, false}
+        };
 
         System.out.print("Enter a student's name: ");
         query = sc.nextLine();
@@ -20,7 +36,7 @@ public class Attendance {
                     if (!attendance[i][j])
                         daysAbsent++;
                 }
-                System.out.println("Absent for " + daysAbsent + " days.");
+                System.out.println("Absent for " + daysAbsent + " day(s).");
             }
         }
 
