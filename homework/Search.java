@@ -1,4 +1,3 @@
-
 /**
  * Programmer: Sean Yang
  * Program Name: Search
@@ -10,13 +9,13 @@ import java.util.Scanner;
 
 public class Search {
     /**
-     * sequentialSearch searches a array of integers linearly
+     * sequentialSearch searches an array of integers linearly
      * 
      * @param array the array to search
      * @param item  the item to find
      * @return the index of the item within the array (-1 if it doesn't exist)
      */
-    public static int sequentialSearch(int array[], int item) {
+    public static int sequentialSearch(int[] array, int item) {
         // set index
         int index = -1;
 
@@ -32,20 +31,20 @@ public class Search {
     }
 
     /**
-     * binarySearch searches a array of integers in O(logN) time
+     * binarySearch searches an array of integers in O(logN) time
      * 
      * @param array the array to search (must be sorted in non-decreasing order)
      * @param item  the itme to find
      * @return the index of the item within the array (-1 if it doesn't exist)
      */
-    public static int binarySearch(int array[], int item) {
+    public static int binarySearch(int[] array, int item) {
         // set variables
         int index = -1;
         int hi = array.length - 1;
         int lo = 0;
         int mid;
 
-        // loop while the size of the array slice is at least 1
+        // loop while the size of the array slice is at least 1,
         // and we haven't found the item yet
         while (lo <= hi && index == -1) {
             // middle index (average of lo and hi)
@@ -101,7 +100,7 @@ public class Search {
         }
 
         // find index (binary search)
-        index = sequentialSearch(myArray, query);
+        index = binarySearch(myArray, query);
 
         // check if index is valid
         if (index >= 0) {
