@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class Attendance {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        final int NUMSTUDENT = 5;
+        final int NUM_STUDENT = 5;
         final int DAYS = 5;
         String[] names;
         boolean[][] attendance;
@@ -29,7 +29,7 @@ public class Attendance {
         System.out.print("Enter a student's name: ");
         query = sc.nextLine();
 
-        for (int i = 0; i < NUMSTUDENT && daysAbsent == -1; i++) {
+        for (int i = 0; i < NUM_STUDENT && daysAbsent == -1; i++) {
             if (query.equals(names[i])) {
                 daysAbsent = 0;
                 for (int j = 0; j < DAYS; j++) {
