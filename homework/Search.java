@@ -8,6 +8,7 @@
 import java.util.Scanner;
 
 public class Search {
+
     /**
      * sequentialSearch searches an array of integers linearly
      * 
