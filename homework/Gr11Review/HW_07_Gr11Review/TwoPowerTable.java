@@ -31,7 +31,7 @@ public class TwoPowerTable {
             bw.write("<title>Powers of Two</title>\n");
             bw.write("</head>\n");
             bw.write("<body>\n");
-            bw.write("<table border cellpadding=5>\n");
+            bw.write("<table border>\n");
             bw.write("<tr><th>Exponent</th><th>Power of 2</th></tr>\n");
 
             currTwo = 1;

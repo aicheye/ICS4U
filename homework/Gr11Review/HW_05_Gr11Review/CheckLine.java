@@ -8,6 +8,7 @@
  */
 
 import java.util.Scanner;
+import HW_05_Gr11Review.Line;
 
 public class CheckLine {
     public static void main(String[] args) {
