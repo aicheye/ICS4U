@@ -27,16 +27,16 @@ public class TwoPowerTable {
         try {
             bw = new BufferedWriter(new FileWriter("twoPowerTable.html"));
 
-            bw.write("<html><head>\n");
+            bw.write("<html lang=\"en\"><head>\n");
             bw.write("<title>Powers of Two</title>\n");
             bw.write("</head>\n");
             bw.write("<body>\n");
-            bw.write("<table border>\n");
-            bw.write("<tr><th>Exponent</th><th>Power of 2</th></tr>\n");
+            bw.write("<table style=\"border: 1px solid\">");
+            bw.write("<tr><th style=\"border: 1px solid\">Exponent</th><th style=\"border: 1px solid\">Power of 2</th></tr>\n");
 
             currTwo = 1;
             for (int exp = 0; exp <= maxExp; exp++) {
-                bw.write("<tr><td>" + exp + "</td><td>" + currTwo + "</td></tr>\n");
+                bw.write("<tr><td style=\"border: 1px solid\">" + exp + "</td><td style=\"border: 1px solid\">" + currTwo + "</td></tr>\n");
                 currTwo *= 2;
             }
 
