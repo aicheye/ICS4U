@@ -6,6 +6,7 @@
  */
 
 public class Sort {
+
     /**
      * insertionSort sorts an array using the insertion sort algorithm
      * 
