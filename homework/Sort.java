@@ -1,3 +1,4 @@
+
 /**
  * Programmer: Sean Yang
  * Program Name: Sort
@@ -6,6 +7,7 @@
  */
 
 public class Sort {
+
     /**
      * insertionSort sorts an array using the insertion sort algorithm
      * 
@@ -53,6 +55,33 @@ public class Sort {
         }
     }
 
+    /**
+     * bubbleSort sorts an array using the bubble sort algorithm
+     * 
+     * @param array the array to sort
+     */
+    public static void bubbleSort(int[] array) {
+        boolean sorted = false;
+        // continue while swapping and shrink upper bound
+        for (int hi = array.length - 1; hi >= 1 && !sorted; hi--) {
+            // set sorted to true
+            sorted = true;
+
+            // loop from top to bottom
+            for (int i = 0; i < hi; i++) {
+                if (array[i] > array[i + 1]) {
+                    // swap elements if they are in the wrong order
+                    int temp = array[i];
+                    array[i] = array[i + 1];
+                    array[i + 1] = temp;
+
+                    // set sorted to false
+                    sorted = false;
+                }
+            }
+        }
+    }
+
     public static void main(String[] args) {
         // test arrays
         int[] myArray1 = {
@@ -77,9 +106,21 @@ public class Sort {
                 0
         };
 
+        int[] myArray3 = {
+                1,
+                3,
+                5,
+                6,
+                21,
+                23,
+                4,
+                0
+        };
+
         // sort
         insertionSort(myArray1);
         selectionSort(myArray2);
+        bubbleSort(myArray3);
 
         // output arrays
         for (int i = 0; i < myArray1.length; i++) {
@@ -89,6 +130,11 @@ public class Sort {
 
         for (int i = 0; i < myArray2.length; i++) {
             System.out.print(myArray2[i] + " ");
+        }
+        System.out.println();
+
+        for (int i = 0; i < myArray3.length; i++) {
+            System.out.print(myArray3[i] + " ");
         }
         System.out.println();
     }
