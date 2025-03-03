@@ -24,7 +24,13 @@ public class RandomNumberSearch {
         System.out.print("Enter an integer (1-20): ");
         int query = sc.nextInt();
 
-        int index = Search.sequentialSearch(randNums, query);
+        int index = -1;
+
+        for (int i = 0; i < randNums.length && index == -1; i++) {
+            if (randNums[i] == query) {
+                index = i;
+            }
+        }
 
         // output answer
         if (index >= 0) {

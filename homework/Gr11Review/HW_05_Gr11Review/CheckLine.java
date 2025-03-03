@@ -18,42 +18,34 @@ public class CheckLine {
         int y1;
         int x2;
         int y2;
-        double length1;
-        double length2;
-        double slope1;
-        double slope2;
+        double length1 = 0;
+        double length2 = 0;
+        double slope1 = 0;
+        double slope2 = 0;
 
-        // take user input for line 1
-        System.out.println("Please enter the two coordinates of line 1:");
-        System.out.print("Vertex 1 x-value:   ");
-        x1 = sc.nextInt();
-        System.out.print("Vertex 1 y-value:   ");
-        y1 = sc.nextInt();
+        // take user input
+        for (int i=1; i<=2; i++) {
+            System.out.println("Please enter the two coordinates of line " + i + ":");
+            System.out.print("Vertex 1 x-value:   ");
+            x1 = sc.nextInt();
+            System.out.print("Vertex 1 y-value:   ");
+            y1 = sc.nextInt();
 
-        System.out.print("\nVertex 2 x-value:   ");
-        x2 = sc.nextInt();
-        System.out.print("Vertex 2 y-value:   ");
-        y2 = sc.nextInt();
+            System.out.print("\nVertex 2 x-value:   ");
+            x2 = sc.nextInt();
+            System.out.print("Vertex 2 y-value:   ");
+            y2 = sc.nextInt();
 
-        // calculate length1 and slope1;
-        length1 = Line.length(x1, y1, x2, y2);
-        slope1 = Line.slope(x1, y1, x2, y2);
-
-        // take user input for line 2
-        System.out.println("\nPlease enter the two coordinates of line 2:");
-        System.out.print("Vertex 1 x-value:   ");
-        x1 = sc.nextInt();
-        System.out.print("Vertex 1 y-value:   ");
-        y1 = sc.nextInt();
-
-        System.out.print("\nVertex 2 x-value:   ");
-        x2 = sc.nextInt();
-        System.out.print("Vertex 2 y-value:   ");
-        y2 = sc.nextInt();
-
-        // calculate length1 and slope1;
-        length2 = Line.length(x1, y1, x2, y2);
-        slope2 = Line.slope(x1, y1, x2, y2);
+            // calculate length1 and slope1;
+            if (i == 1) {
+                length1 = Line.length(x1, y1, x2, y2);
+                slope1 = Line.slope(x1, y1, x2, y2);
+            }
+            else {
+                length2 = Line.length(x1, y1, x2, y2);
+                slope2 = Line.slope(x1, y1, x2, y2);
+            }
+        }
 
         // output results
         System.out.println("\nResults:");
