@@ -70,7 +70,7 @@ public class Sort {
             // loop from top to bottom
             for (int i = 0; i < hi; i++) {
                 if (array[i] > array[i + 1]) {
-                    // swap elements if they are in the wrong order
+                    // swap elements if they are in the wrong orders
                     int temp = array[i];
                     array[i] = array[i + 1];
                     array[i + 1] = temp;

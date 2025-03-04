@@ -18,7 +18,8 @@ public class CocktailSort {
     }
 
     /**
-     * cocktailSort sorts an array in ascending order using the Cocktail Sort Algorithm
+     * cocktailSort sorts an array in ascending order using the Cocktail Sort
+     * Algorithm
      *
      * @param array the array to sort
      */
@@ -78,5 +79,8 @@ public class CocktailSort {
         }
 
         cocktailSort(arr);
+
+        // close scanner
+        sc.close();
     }
 }
