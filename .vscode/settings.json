@@ -137,7 +137,6 @@
   "characterConversion.notmore": "≤",
   "characterConversion.equal": "==",
   "characterConversion.notequal": "!=",
-  "editor.fontFamily": "Fira Code",
   "editor.fontLigatures": true,
   "editor.colorDecoratorsActivatedOn": "click",
   "explorer.decorations.colors": false,
