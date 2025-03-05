@@ -48,7 +48,7 @@ public class Sort {
                 }
             }
 
-            // swap maxIndex and lo
+            // swap minIndex and lo
             int temp = array[minIndex];
             array[minIndex] = array[lo];
             array[lo] = temp;

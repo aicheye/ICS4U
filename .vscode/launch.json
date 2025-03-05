@@ -3,6 +3,55 @@
   "configurations": [
     {
       "type": "java",
+      "name": "ParallelSort",
+      "request": "launch",
+      "mainClass": "ParallelSort",
+      "projectName": "ICS4U_c3b5a8e4"
+    },
+    {
+      "type": "java",
+      "name": "TernarySearch",
+      "request": "launch",
+      "mainClass": "TernarySearch",
+      "projectName": "ICS4U_c3b5a8e4"
+    },
+    {
+      "type": "java",
+      "name": "InsertionSortPlanets",
+      "request": "launch",
+      "mainClass": "InsertionSortPlanets",
+      "projectName": "ICS4U_c3b5a8e4"
+    },
+    {
+      "type": "java",
+      "name": "InsertionSortSimple",
+      "request": "launch",
+      "mainClass": "InsertionSortSimple",
+      "projectName": "ICS4U_c3b5a8e4"
+    },
+    {
+      "type": "java",
+      "name": "BinarySearchNearestIndex",
+      "request": "launch",
+      "mainClass": "BinarySearchNearestIndex",
+      "projectName": "ICS4U_c3b5a8e4"
+    },
+    {
+      "type": "java",
+      "name": "BinarySearchString",
+      "request": "launch",
+      "mainClass": "BinarySearchString",
+      "projectName": "ICS4U_c3b5a8e4"
+    },
+    {
+      "type": "java",
+      "name": "Division",
+      "request": "launch",
+      "mainClass": "Division",
+      "projectName": "ICS4U_c3b5a8e4"
+    },
+    {
+      "type": "java",
       "name": "Sort",
       "request": "launch",
       "mainClass": "Sort",

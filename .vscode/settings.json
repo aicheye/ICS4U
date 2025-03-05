@@ -218,5 +218,8 @@
   "workbench.preferredDarkColorTheme": "Default Dark Modern",
   "workbench.preferredLightColorTheme": "Adwaita Light",
   "editor.renderLineHighlight": "none",
-  "workbench.iconTheme": null
+  "workbench.iconTheme": null,
+  "java.debug.settings.onBuildFailureProceed": true,
+  "java.project.sourcePaths": ["homework/HW_01_SequentialSearch", "homework/Gr11Review/HW_01_Gr11Review", "homework/AYOJ", "homework/HW_02_BinarySearch", "homework", "homework/HW_03_InsertionSort"],
+  "java.project.referencedLibraries": []
 }
