@@ -3,6 +3,27 @@
   "configurations": [
     {
       "type": "java",
+      "name": "RecursionHomework",
+      "request": "launch",
+      "mainClass": "RecursionHomework",
+      "projectName": "ICS4U_c3b5a8e4"
+    },
+    {
+      "type": "java",
+      "name": "TowerOfHanoi",
+      "request": "launch",
+      "mainClass": "TowerOfHanoi",
+      "projectName": "ICS4U_c3b5a8e4"
+    },
+    {
+      "type": "java",
+      "name": "StringPermutation",
+      "request": "launch",
+      "mainClass": "StringPermutation",
+      "projectName": "ICS4U_c3b5a8e4"
+    },
+    {
+      "type": "java",
       "name": "ParallelSort",
       "request": "launch",
       "mainClass": "ParallelSort",

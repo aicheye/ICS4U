@@ -65,5 +65,8 @@ public class BinarySearchString {
         } else {
             System.out.println("Found at index " + idx);
         }
+
+        // close scanner
+        sc.close();
     }
 }
