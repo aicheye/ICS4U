@@ -46,6 +46,9 @@ public class RecursionHomework {
      * @return true if it is prime, false if it is composite
      */
     public static boolean prime(int N) {
+        if (N == 1) {
+            return false;
+        }
         return prime(N, N - 1);
     }
 
