@@ -3,6 +3,20 @@
   "configurations": [
     {
       "type": "java",
+      "name": "BitStringGenerator",
+      "request": "launch",
+      "mainClass": "BitStringGenerator",
+      "projectName": "ICS4U_c3b5a8e4"
+    },
+    {
+      "type": "java",
+      "name": "GenerateString",
+      "request": "launch",
+      "mainClass": "GenerateString",
+      "projectName": "ICS4U_c3b5a8e4"
+    },
+    {
+      "type": "java",
       "name": "RecursionHomework",
       "request": "launch",
       "mainClass": "RecursionHomework",
