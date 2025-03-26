@@ -16,9 +16,12 @@ public class BitStringGenerator {
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        int n = sc.nextInt();
-        int k = sc.nextInt();
-        generate("", n, k);
+        int T = sc.nextInt();
+        while (T-- > 0) {
+            int n = sc.nextInt();
+            int k = sc.nextInt();
+            generate("", n, k);
+        }
         sc.close();
     }
 }

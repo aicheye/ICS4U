@@ -3,6 +3,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "Fraction",
+      "request": "launch",
+      "mainClass": "Fraction",
+      "projectName": "ICS4U_c3b5a8e4"
+    },
+    {
+      "type": "java",
       "name": "BitStringGenerator",
       "request": "launch",
       "mainClass": "BitStringGenerator",
