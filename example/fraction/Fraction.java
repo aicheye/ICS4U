@@ -5,7 +5,7 @@
  * Date: 31/03/2025
  */
 
-public class Fraction implements Comparable<Fraction> {
+public class Fraction {
     private int num;
     private int denum;
 
