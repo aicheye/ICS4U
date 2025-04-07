@@ -5,7 +5,7 @@
  * Date: 31/03/2025
  */
 
-public class Fraction {
+public class Fraction implements Comparable<Fraction> {
     private int num;
     private int denum;
 
@@ -36,9 +36,9 @@ public class Fraction {
     }
 
     /**
-     * reduce - simplifies the fraction
+     * simplify - simplifies the fraction
      */
-    private void reduce() {
+    public void simplify() {
         int gcd = gcd(Math.abs(num), denum);
         num = num / gcd;
         denum = denum / gcd;
@@ -51,6 +51,24 @@ public class Fraction {
      */
     public double magnitude() {
         return Math.abs((double) num / denum);
+    }
+
+    /**
+     * abs - returns the absolute value of this fraction
+     * 
+     * @return the absolute value of this fraction
+     */
+    public static Fraction abs(Fraction f) {
+        return new Fraction(Math.abs(f.num), Math.abs(f.denum));
+    }
+
+    /**
+     * isPositive - whether this fraction is positive
+     * 
+     * @return whether this fraction is positive
+     */
+    public static boolean isPositive(Fraction f) {
+        return (f.num * f.denum >= 0);
     }
 
     /**
@@ -76,13 +94,6 @@ public class Fraction {
         if (denum == 0) {
             throw new ArithmeticException("Cannot divide by 0");
         }
-
-        boolean sgn = !((num < 0) ^ (denum < 0));
-        if (!sgn) {
-            this.num *= -1;
-        }
-
-        reduce();
     }
 
     /**
@@ -103,7 +114,6 @@ public class Fraction {
         int lcm = lcm(denum, other.denum);
         denum = lcm;
         num = num * (lcm / denum) + other.num * (lcm / other.denum);
-        reduce();
     }
 
     /**
@@ -113,7 +123,6 @@ public class Fraction {
      */
     public void subtract(Fraction other) {
         add(new Fraction(other.num * -1, other.denum));
-        reduce();
     }
 
     /**
@@ -124,17 +133,6 @@ public class Fraction {
     public void multiply(Fraction other) {
         denum = denum * other.denum;
         num = num * other.num;
-        reduce();
-    }
-
-    /**
-     * reciprocal - returns the reciprocal of a fraction
-     * 
-     * @param frac the fraction to find the reciprocal of
-     * @return a new Fraction object, the reciprocal
-     */
-    public static Fraction reciprocal(Fraction frac) {
-        return new Fraction(frac.denum, frac.num);
     }
 
     /**
@@ -143,8 +141,7 @@ public class Fraction {
      * @param other the fraction to divide by
      */
     public void divide(Fraction other) {
-        multiply(reciprocal(other));
-        reduce();
+        multiply(new Fraction(other.denum, other.num));
     }
 
     /**
@@ -154,10 +151,7 @@ public class Fraction {
      * @return whether the fractions are equal
      */
     public boolean equals(Fraction other) {
-        if (num == other.num && denum == other.num) {
-            return true;
-        }
-        return false;
+        return other != null && num == other.num && denum == other.num;
     }
 
     /**
@@ -168,9 +162,6 @@ public class Fraction {
      *         the other fraction is greater, or 0 if both are equal
      */
     public int compareTo(Fraction other) {
-        if (equals(other)) {
-            return 0;
-        }
         return (int) Math.ceil(decimal() - other.decimal());
     }
 
@@ -198,15 +189,6 @@ public class Fraction {
             return this;
         }
         return other;
-    }
-
-    /**
-     * clone - creates an identical copy of this fraction
-     * 
-     * @return a new identical Fraction object
-     */
-    public Fraction clone() {
-        return new Fraction(num, denum);
     }
 
     /**
@@ -264,5 +246,9 @@ public class Fraction {
         System.out.println(f3);
 
         System.out.println(Fraction.product(f2, f3));
+
+        f3.simplify();
+
+        System.out.println(f3);
     }
 }
