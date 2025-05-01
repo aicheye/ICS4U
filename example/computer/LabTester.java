@@ -63,5 +63,7 @@ public class LabTester {
         for (int i = 0; i < expiring.length; i++) {
             System.out.println(expiring[i].getSerial());
         }
+
+        sc.close();
     }
 }

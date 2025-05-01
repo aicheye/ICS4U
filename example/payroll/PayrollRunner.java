@@ -44,10 +44,12 @@ public class PayrollRunner {
                         break;
 
                     case 2:
-                        System.out.print("Enter employee ID");
+                        System.out.print("Enter employee ID: ");
                         int employeeNumber = sc.nextInt();
+                        sc.nextLine();
                         System.out.print("Enter number of sick days (must be in units of 0.5): ");
                         double days = sc.nextDouble();
+                        sc.nextLine();
                         if (payroll.enterSickDay(employeeNumber, days)) {
                             System.out.println("Deducted successfully.");
                         } else {
@@ -68,12 +70,13 @@ public class PayrollRunner {
                         break;
 
                     case 6:
+                        System.out.print("Enter file name: ");
+                        fileName = sc.nextLine();
                         payroll.saveStaffList(fileName);
                         break;
 
                     case 7:
                         System.out.print("Enter file name: ");
-                        sc.nextLine();
                         fileName = sc.nextLine();
                         payroll.loadStaffList(fileName);
                         break;
@@ -105,5 +108,7 @@ public class PayrollRunner {
             System.out.print("Press enter to continue.");
             sc.nextLine();
         }
+
+        sc.close();
     }
 }

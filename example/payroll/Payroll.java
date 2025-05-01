@@ -133,7 +133,7 @@ class Payroll {
         try {
             BufferedWriter bw = new BufferedWriter(new FileWriter(fileName));
 
-            bw.write(numStaff);
+            bw.write(numStaff + "\n");
 
             for (int i = 0; i < numStaff; i++) {
                 Employee employee = staffList[i];

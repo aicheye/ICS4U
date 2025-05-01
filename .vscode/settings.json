@@ -227,7 +227,8 @@
     "homework/Gr11Review/HW_01_Gr11Review",
     "example/fraction",
     "example/computer",
-    "example/payroll"
+    "example/payroll",
+    "example"
 ],
   "java.project.referencedLibraries": []
 }
