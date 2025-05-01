@@ -9,7 +9,7 @@ public class Lab {
     private int maxComputers;
     private int installedComputers;
     private Computer[] computers;
-    private final int CURRENT_YEAR = 2025;
+    static final int CURRENT_YEAR = 2025;
 
     /**
      * Constructor method
@@ -123,8 +123,16 @@ public class Lab {
      * @return an array of expiring computers
      */
     Computer[] expiringSoon() {
-        Computer[] expiring = new Computer[installedComputers];
         int numExpiring = 0;
+
+        for (int i = 0; i < installedComputers; i++) {
+            if (computers[i].getWarrantyExpiry() == CURRENT_YEAR + 1) {
+                numExpiring++;
+            }
+        }
+
+        Computer[] expiring = new Computer[numExpiring];
+        numExpiring = 0;
 
         for (int i = 0; i < installedComputers; i++) {
             if (computers[i].getWarrantyExpiry() == CURRENT_YEAR + 1) {
@@ -132,12 +140,6 @@ public class Lab {
             }
         }
 
-        Computer[] expiringTrimmed = new Computer[numExpiring];
-
-        for (int i = 0; i < numExpiring; i++) {
-            expiringTrimmed[i] = expiring[i];
-        }
-
-        return expiringTrimmed;
+        return expiring;
     }
 }

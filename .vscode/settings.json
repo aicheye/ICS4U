@@ -220,6 +220,14 @@
   "editor.renderLineHighlight": "none",
   "workbench.iconTheme": null,
   "java.debug.settings.onBuildFailureProceed": true,
-  "java.project.sourcePaths": ["src", "homework/HW_06_Recursion", "homework/HW_03_InsertionSort", "homework/HW_02_BinarySearch", "homework/Gr11Review/HW_01_Gr11Review", "example/fraction"],
+  "java.project.sourcePaths": [
+    "homework/HW_06_Recursion",
+    "homework/HW_03_InsertionSort",
+    "homework/HW_02_BinarySearch",
+    "homework/Gr11Review/HW_01_Gr11Review",
+    "example/fraction",
+    "example/computer",
+    "example/payroll"
+],
   "java.project.referencedLibraries": []
 }
