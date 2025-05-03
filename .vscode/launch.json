@@ -3,6 +3,13 @@
   "configurations": [
     {
         "type": "java",
+        "name": "Realty",
+        "request": "launch",
+        "mainClass": "Realty",
+        "projectName": "ICS4U_c3b5a8e4"
+    },
+    {
+        "type": "java",
         "name": "PayrollRunner",
         "request": "launch",
         "mainClass": "PayrollRunner",
