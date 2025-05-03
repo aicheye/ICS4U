@@ -2,102 +2,116 @@
   "version": "0.2.0",
   "configurations": [
     {
-      "type": "java",
-      "name": "Fraction",
-      "request": "launch",
-      "mainClass": "Fraction",
-      "projectName": "ICS4U_c3b5a8e4"
+        "type": "java",
+        "name": "Realty",
+        "request": "launch",
+        "mainClass": "Realty",
+        "projectName": "ICS4U_c3b5a8e4"
     },
     {
-      "type": "java",
-      "name": "BitStringGenerator",
-      "request": "launch",
-      "mainClass": "BitStringGenerator",
-      "projectName": "ICS4U_c3b5a8e4"
+        "type": "java",
+        "name": "PayrollRunner",
+        "request": "launch",
+        "mainClass": "PayrollRunner",
+        "projectName": "ICS4U_c3b5a8e4"
     },
     {
-      "type": "java",
-      "name": "GenerateString",
-      "request": "launch",
-      "mainClass": "GenerateString",
-      "projectName": "ICS4U_c3b5a8e4"
+        "type": "java",
+        "name": "Fraction",
+        "request": "launch",
+        "mainClass": "Fraction",
+        "projectName": "ICS4U_c3b5a8e4"
     },
     {
-      "type": "java",
-      "name": "RecursionHomework",
-      "request": "launch",
-      "mainClass": "RecursionHomework",
-      "projectName": "ICS4U_c3b5a8e4"
+        "type": "java",
+        "name": "BitStringGenerator",
+        "request": "launch",
+        "mainClass": "BitStringGenerator",
+        "projectName": "ICS4U_c3b5a8e4"
     },
     {
-      "type": "java",
-      "name": "TowerOfHanoi",
-      "request": "launch",
-      "mainClass": "TowerOfHanoi",
-      "projectName": "ICS4U_c3b5a8e4"
+        "type": "java",
+        "name": "GenerateString",
+        "request": "launch",
+        "mainClass": "GenerateString",
+        "projectName": "ICS4U_c3b5a8e4"
     },
     {
-      "type": "java",
-      "name": "StringPermutation",
-      "request": "launch",
-      "mainClass": "StringPermutation",
-      "projectName": "ICS4U_c3b5a8e4"
+        "type": "java",
+        "name": "RecursionHomework",
+        "request": "launch",
+        "mainClass": "RecursionHomework",
+        "projectName": "ICS4U_c3b5a8e4"
     },
     {
-      "type": "java",
-      "name": "ParallelSort",
-      "request": "launch",
-      "mainClass": "ParallelSort",
-      "projectName": "ICS4U_c3b5a8e4"
+        "type": "java",
+        "name": "TowerOfHanoi",
+        "request": "launch",
+        "mainClass": "TowerOfHanoi",
+        "projectName": "ICS4U_c3b5a8e4"
     },
     {
-      "type": "java",
-      "name": "TernarySearch",
-      "request": "launch",
-      "mainClass": "TernarySearch",
-      "projectName": "ICS4U_c3b5a8e4"
+        "type": "java",
+        "name": "StringPermutation",
+        "request": "launch",
+        "mainClass": "StringPermutation",
+        "projectName": "ICS4U_c3b5a8e4"
     },
     {
-      "type": "java",
-      "name": "InsertionSortPlanets",
-      "request": "launch",
-      "mainClass": "InsertionSortPlanets",
-      "projectName": "ICS4U_c3b5a8e4"
+        "type": "java",
+        "name": "ParallelSort",
+        "request": "launch",
+        "mainClass": "ParallelSort",
+        "projectName": "ICS4U_c3b5a8e4"
     },
     {
-      "type": "java",
-      "name": "InsertionSortSimple",
-      "request": "launch",
-      "mainClass": "InsertionSortSimple",
-      "projectName": "ICS4U_c3b5a8e4"
+        "type": "java",
+        "name": "TernarySearch",
+        "request": "launch",
+        "mainClass": "TernarySearch",
+        "projectName": "ICS4U_c3b5a8e4"
     },
     {
-      "type": "java",
-      "name": "BinarySearchNearestIndex",
-      "request": "launch",
-      "mainClass": "BinarySearchNearestIndex",
-      "projectName": "ICS4U_c3b5a8e4"
+        "type": "java",
+        "name": "InsertionSortPlanets",
+        "request": "launch",
+        "mainClass": "InsertionSortPlanets",
+        "projectName": "ICS4U_c3b5a8e4"
     },
     {
-      "type": "java",
-      "name": "BinarySearchString",
-      "request": "launch",
-      "mainClass": "BinarySearchString",
-      "projectName": "ICS4U_c3b5a8e4"
+        "type": "java",
+        "name": "InsertionSortSimple",
+        "request": "launch",
+        "mainClass": "InsertionSortSimple",
+        "projectName": "ICS4U_c3b5a8e4"
     },
     {
-      "type": "java",
-      "name": "Division",
-      "request": "launch",
-      "mainClass": "Division",
-      "projectName": "ICS4U_c3b5a8e4"
+        "type": "java",
+        "name": "BinarySearchNearestIndex",
+        "request": "launch",
+        "mainClass": "BinarySearchNearestIndex",
+        "projectName": "ICS4U_c3b5a8e4"
     },
     {
-      "type": "java",
-      "name": "Sort",
-      "request": "launch",
-      "mainClass": "Sort",
-      "projectName": "ICS4U_c3b5a8e4"
+        "type": "java",
+        "name": "BinarySearchString",
+        "request": "launch",
+        "mainClass": "BinarySearchString",
+        "projectName": "ICS4U_c3b5a8e4"
+    },
+    {
+        "type": "java",
+        "name": "Division",
+        "request": "launch",
+        "mainClass": "Division",
+        "projectName": "ICS4U_c3b5a8e4"
+    },
+    {
+        "type": "java",
+        "name": "Sort",
+        "request": "launch",
+        "mainClass": "Sort",
+        "projectName": "ICS4U_c3b5a8e4"
     },
     {
         "type": "java",

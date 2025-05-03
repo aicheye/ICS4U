@@ -13,7 +13,6 @@ class Computer {
     private double processorSpeed;
     private int ramSize;
     private int warrantyExpiry;
-    private final int CURRENT_YEAR = 2025;
 
     /**
      * getSerial accessor for serial number
@@ -202,7 +201,7 @@ class Computer {
      * @return the age of this computer
      */
     int age() {
-        return CURRENT_YEAR - yearMade;
+        return Lab.CURRENT_YEAR - yearMade;
     }
 
     /**
