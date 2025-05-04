@@ -13,7 +13,7 @@ public class Condo extends Property {
      * 
      * @param id            the property ID
      * @param address       the address of the condo building
-     * @param zoneCode      the area the condi is in
+     * @param zoneCode      the area the condo is in
      * @param price         price in dollars
      * @param size          size in square feet
      * @param numBedroom

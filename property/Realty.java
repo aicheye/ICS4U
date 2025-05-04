@@ -15,12 +15,14 @@ public class Realty {
 
         System.out.print("Enter maximum # of properties: ");
         int maxProperty = sc.nextInt();
+        sc.nextLine();
 
-        PropertyDatabse propertyDatabse = new PropertyDatabse(maxProperty, FILENAME);
+        PropertyDatabase propertyDatabase = new PropertyDatabase(maxProperty, FILENAME);
 
         boolean exit = false;
         while (!exit) {
             System.out.println("""
+
                     Choose an option:
                     1: load properties from file
                     2: list all properties
@@ -36,66 +38,143 @@ public class Realty {
             try {
                 switch (Integer.parseInt(input)) {
                     case 1:
-                        propertyDatabse.loadProperties(FILENAME);
+                        propertyDatabase.loadProperties(FILENAME);
                         break;
 
                     case 2:
-                        Property[] properties = propertyDatabse.getAllProperties();
+                        Property[] properties = propertyDatabase.getAllProperties();
                         for (int i = 0; i < properties.length; i++) {
-                            System.out.println(properties[i] + "\n");
+                            System.out.println("\n" + properties[i]);
                         }
                         break;
 
                     case 3:
-                        Condo[] condos = propertyDatabse.getAllCondos();
+                        Condo[] condos = propertyDatabase.getAllCondos();
                         for (int i = 0; i < condos.length; i++) {
-                            System.out.println(condos[i] + "\n");
+                            System.out.println("\n" + condos[i]);
                         }
                         break;
 
                     case 4:
-                        House[] houses = propertyDatabse.getAllHouses();
+                        House[] houses = propertyDatabase.getAllHouses();
                         for (int i = 0; i < houses.length; i++) {
-                            System.out.println(houses[i] + "\n");
+                            System.out.println("\n" + houses[i]);
                         }
                         break;
 
                     case 5:
                         System.out.print("Enter the ID to search: ");
                         int queryID = sc.nextInt();
-                        Property match = propertyDatabse.searchByID(queryID);
+                        sc.nextLine();
+                        Property match = propertyDatabase.searchByID(queryID);
 
                         if (match != null) {
-                            System.out.println(match + "\n");
+                            System.out.println("\n" + match);
                         } else {
-                            System.out.println("No match found.\n");
+                            System.out.println("No match found.");
                         }
 
                         break;
 
                     case 6:
-                        // search by specifications
+                        System.out.print("Search for [h]ouse or [c]ondo? ");
+                        String type = sc.nextLine().toLowerCase();
+
+                        if (!type.equals("h") && !type.equals("c")) {
+                            System.out.println("Must enter a valid option.");
+                            break;
+                        }
+
+                        System.out.print("Zone to search in: ");
+                        String zoneCode = sc.nextLine();
+
+                        System.out.print("Maximum price: $");
+                        int price = sc.nextInt();
+                        sc.nextLine();
+
+                        System.out.print("Minimum size (sqft): ");
+                        int size = sc.nextInt();
+                        sc.nextLine();
+
+                        System.out.print("Minimum number of bedrooms: ");
+                        int numBedroom = sc.nextInt();
+                        sc.nextLine();
+
+                        PrimarySpec primSpec = new PrimarySpec(zoneCode, price, size, numBedroom);
+                        SecondarySpec secSpec;
+
+                        if (type.charAt(0) == 'h') {
+                            System.out.print("Vacuum included (y/n): ");
+                            boolean vacuum = sc.nextLine().toLowerCase().equals("y");
+
+                            System.out.print("Air conditioning (y/n): ");
+                            boolean ac = sc.nextLine().toLowerCase().equals("y");
+
+                            System.out.print("Fireplace (y/n): ");
+                            boolean fireplace = sc.nextLine().toLowerCase().equals("y");
+
+                            System.out.print("Hardwood floors (y/n): ");
+                            boolean hardwood = sc.nextLine().toLowerCase().equals("y");
+
+                            System.out.print("Finished basement (y/n): ");
+                            boolean basement = sc.nextLine().toLowerCase().equals("y");
+
+                            secSpec = new HouseSpec(vacuum, ac, fireplace, hardwood, basement);
+                        } else {
+                            System.out.print("Pool (y/n): ");
+                            boolean pool = sc.nextLine().toLowerCase().equals("y");
+
+                            System.out.print("Exercise room (y/n): ");
+                            boolean exRoom = sc.nextLine().toLowerCase().equals("y");
+
+                            System.out.print("Locker (y/n): ");
+                            boolean locker = sc.nextLine().toLowerCase().equals("y");
+
+                            System.out.print("Hydro included (y/n): ");
+                            boolean hydroIncluded = sc.nextLine().toLowerCase().equals("y");
+
+                            System.out.print("Cable included (y/n): ");
+                            boolean cableIncluded = sc.nextLine().toLowerCase().equals("y");
+
+                            secSpec = new CondoSpec(pool, exRoom, locker, hydroIncluded, cableIncluded);
+                        }
+
+                        System.out.print("Minimum % of secondary specifications matching (0-100): ");
+                        double minPercent = (double) sc.nextInt() / 100;
+
+                        Property[] matchingProperties = propertyDatabase.getAllMatches(primSpec, secSpec, minPercent);
+
+                        if (matchingProperties.length == 0) {
+                            System.out.println("\nNo matches found.");
+                        }
+
+                        for (int i = 0; i < matchingProperties.length; i++) {
+                            System.out.println("\n" + matchingProperties[i]);
+                        }
+
+                        sc.nextLine();
+
                         break;
 
                     case 7:
                         System.out.print("Enter a zone: ");
                         String zone = sc.nextLine();
-                        System.out.printf("Average price: $%,.2f%n", propertyDatabse.averagePriceInZone(zone) + "\n");
+                        System.out.printf("Average price: $%,.2f%n", propertyDatabase.averagePriceInZone(zone));
                         break;
 
                     case 8:
-                        System.out.println(propertyDatabse.largestCondo());
+                        System.out.println("\n" + propertyDatabase.largestCondo());
                         break;
 
                     default:
-                        System.out.println("Must enter a valid option.\n");
+                        System.out.println("Must enter a valid option.");
                         break;
                 }
             } catch (NumberFormatException nfe) {
                 System.out.println("Must enter a valid option.");
             }
 
-            System.out.print("Press enter to continue.");
+            System.out.print("\nPress enter to continue.");
             sc.nextLine();
         }
 

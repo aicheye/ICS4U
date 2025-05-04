@@ -229,7 +229,8 @@
     "example/computer",
     "example/payroll",
     "example",
-    "property"
+    "property",
+    "example\\payroll"
 ],
   "java.project.referencedLibraries": []
 }

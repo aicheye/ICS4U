@@ -2,7 +2,7 @@ import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
 
-public class PropertyDatabse {
+public class PropertyDatabase {
     private final int maxProperty;
     private int numProperty;
     private Property[] propertyList;
@@ -32,7 +32,7 @@ public class PropertyDatabse {
                 String zone = br.readLine();
                 int price = Integer.parseInt(br.readLine());
                 int size = Integer.parseInt(br.readLine());
-                int numBedrooms = Integer.parseInt(br.readLine());
+                int numBedroom = Integer.parseInt(br.readLine());
 
                 if (type.equals("house")) {
                     boolean vacuum = br.readLine().equals("Y");
@@ -41,7 +41,7 @@ public class PropertyDatabse {
                     boolean hardwood = br.readLine().equals("Y");
                     boolean basement = br.readLine().equals("Y");
 
-                    propertyList[i] = new House(id, address, zone, price, size, numBedrooms, vacuum, ac, fireplace,
+                    propertyList[i] = new House(id, address, zone, price, size, numBedroom, vacuum, ac, fireplace,
                             hardwood, basement);
                 } else {
                     boolean pool = br.readLine().equals("Y");
@@ -50,7 +50,7 @@ public class PropertyDatabse {
                     boolean hydroIncluded = br.readLine().equals("Y");
                     boolean cableIncluded = br.readLine().equals("Y");
 
-                    propertyList[i] = new Condo(id, address, zone, price, size, numBedrooms, pool, exRoom, locker,
+                    propertyList[i] = new Condo(id, address, zone, price, size, numBedroom, pool, exRoom, locker,
                             hydroIncluded, cableIncluded);
                 }
 
@@ -71,7 +71,7 @@ public class PropertyDatabse {
      * @param maxProperty maximum number of properties which will be stored
      * @param fileName    the file name to load from
      */
-    public PropertyDatabse(int maxProperty, String fileName) {
+    public PropertyDatabase(int maxProperty, String fileName) {
         this.maxProperty = maxProperty;
         propertyList = new Property[maxProperty];
         loadProperties(fileName);
@@ -189,16 +189,22 @@ public class PropertyDatabse {
      */
     public double averagePriceInZone(String zone) {
         double sum = 0;
+        int count = 0;
 
         for (int i = 0; i < numProperty; i++) {
             PrimarySpec primSpec = propertyList[i].getPrimarySpec();
 
             if (primSpec.getZoneCode().equals(zone)) {
                 sum += primSpec.getPrice();
+                count++;
             }
         }
 
-        return sum / numProperty;
+        if (count == 0) {
+            return 0;
+        }
+
+        return sum / count;
     }
 
     /**
